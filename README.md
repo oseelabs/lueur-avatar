@@ -4,6 +4,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![bundlephobia](https://badgen.net/bundlephobia/min/@lueur/avatar)](https://bundlephobia.com/package/@lueur/avatar)
 [![Last Commit](https://img.shields.io/github/last-commit/oseelabs/lueur-avatar)](https://github.com/oseelabs/lueur-avatar)
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-red?logo=github&style=flat-square)](https://github.com/sponsors/oseelabs/avatar)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/lazaroodira)
 
 A lightweight and customizable TypeScript package for generating beautiful SVG user avatars based on usernames or custom text.
 
@@ -243,6 +246,15 @@ Contributions are welcome!
 5. Commit: `git commit -m 'feat: Add feature'`
 6. Push: `git push origin feature/your-feature-name`
 7. Open a pull request.
+
+---
+
+## 💖 Support This Project
+
+If you find this project helpful, consider sponsoring:
+
+- ❤️ [GitHub Sponsors](https://github.com/sponsors/oseelabs)
+- ☕ [Buy Me a Coffee](https://ko-fi.com/lazaroodira)
 
 ---
 
