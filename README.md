@@ -186,7 +186,7 @@ The main function to create an SVG avatar.
 
 ---
 
-### `generateAvatarData(username: string, options?: AvatarOptions): string`
+### `generateAvatarDataUri(username: string, options?: AvatarOptions): string`
 
 This function uses `generateAvatarSvg` function (above) to generate an svg string.
 It then generates a base64 string that can be used as an image data uri to display the avatar as an actual image.

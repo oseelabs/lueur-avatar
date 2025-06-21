@@ -1,0 +1,21 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/functions/index.ts", "src/types/index.ts", "src/utils/index.ts", "src/constants/index.ts"],
+    "projectDocuments": ["README.md"],
+    "githubPages": true,
+  "out": "docs",
+  "categorizeByGroup": false,
+  "excludePrivate": true,
+  "includeVersion": true,
+  "hideGenerator": true,
+  "theme": "default",
+  "name": "@lueur/avatar",
+    "headings": {
+        "readme": true,
+        "document": true
+    },
+    "useFirstParagraphOfCommentAsSummary": true,
+  "exclude": ["**/__tests__/**", "**/*.test.ts"],
+  "plugin": ["typedoc-material-theme"],
+  "themeColor": "#cb9820",
+}

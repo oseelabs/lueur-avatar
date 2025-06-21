@@ -7,6 +7,11 @@ import type { AvatarOptions } from "../types";
  *
  * This is useful for embedding the avatar directly into an <img> tag,
  * CSS `background-image`, or similar usage without needing a file server.
+ * 
+ * @category Generator Functions
+ * @categoryDescription The main functions to generate the avatar.
+ * @author Lazaro Osee
+ * @showCategory
  *
  * @param {string} username - The name from which initials are derived to create the avatar.
  * @param {AvatarOptions} [options] - Optional configuration to customize the avatar's appearance.

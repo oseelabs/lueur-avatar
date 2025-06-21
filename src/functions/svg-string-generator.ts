@@ -10,7 +10,12 @@ import {
 
 /**
  * Generates an SVG string for a user avatar based on a username and provided options.
- *
+ * 
+ * @category Generator Functions
+ * @categoryDescription The main functions to generate the avatar.
+ * @author Lazaro Osee
+ * @showCategory
+ * 
  * @param {number} username The name of the user for whom to generate the avatar.
  * @param {AvatarOptions} options Customization options for the avatar.
  * @returns {string} A string containing the SVG representation of the avatar.

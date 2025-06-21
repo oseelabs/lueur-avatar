@@ -10,6 +10,9 @@
   ],
   "scripts": {
     "build": "npx tsc",
+    "docs": "typedoc",
+    "docs:preview": "npm run docs && serve docs",
+    "docs:publish": "npm run docs && gh-pages -d docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -29,6 +32,11 @@
   "homepage": "https://github.com/oseelabs/lueur-avatar#readme",
   "devDependencies": {
     "@types/node": "^24.0.3",
+    "gh-pages": "^6.3.0",
+    "serve": "^14.2.4",
+    "typedoc": "^0.28.5",
+    "typedoc-material-theme": "^1.4.0",
+    "typedoc-plugin-markdown": "^4.7.0",
     "typescript": "^5.8.3"
   }
 }
