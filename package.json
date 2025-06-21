@@ -28,6 +28,7 @@
   "license": "MIT",
   "homepage": "https://github.com/oseelabs/lueur-avatar#readme",
   "devDependencies": {
+    "@types/node": "^24.0.3",
     "typescript": "^5.8.3"
   }
 }

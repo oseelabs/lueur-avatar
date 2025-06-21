@@ -1,2 +1,4 @@
-export { generateAvatarSvg } from './avatar-generator';
-export type { AvatarOptions, AvatarShape } from './types';
+import "./polyfill";
+
+export { generateAvatarSvg, generateAvatarDataUri } from "./functions";
+export type { AvatarOptions, AvatarShape } from "./types";

@@ -1,0 +1,1 @@
+export { stringToHash, getColorFromHash, getContrastingTextColor, getInitials, getLuminance } from './avatar';

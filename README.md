@@ -1,8 +1,11 @@
 # `@lueur/avatar`
 
-[![npm version](https://badge.fury.io/js/@lueur/avatar.svg)](https://www.npmjs.com/package/@lueur/avatar)
+[![npm version](https://img.shields.io/npm/v/@lueur/avatar)](https://www.npmjs.com/package/@lueur/avatar)
 [![npm downloads](https://img.shields.io/npm/dt/@lueur/avatar.svg)](https://www.npmjs.com/package/@lueur/avatar)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![bundlephobia](https://badgen.net/bundlephobia/min/@lueur/avatar)](https://bundlephobia.com/package/@lueur/avatar)
+[![Last Commit](https://img.shields.io/github/last-commit/oseelabs/lueur-avatar)](https://github.com/oseelabs/lueur-avatar)
+
 
 A lightweight and customizable TypeScript package for generating beautiful SVG user avatars based on usernames or custom text. Perfect for displaying initials as a fallback or primary user icon.
 
@@ -67,7 +70,7 @@ Import `generateAvatarSvg` and pass a username. By default, it creates a 100x100
 ```ts
 import { generateAvatarSvg } from '@lueur/avatar';
 
-// Generate a basic avatar for "John Doe"
+// Generate a basic avatar SVG string for "John Doe"
 const johnDoeAvatar = generateAvatarSvg('John Doe');
 console.log(johnDoeAvatar);
 ```
@@ -77,6 +80,8 @@ console.log(johnDoeAvatar);
 The `generateAvatarSvg` function accepts an optional options object for extensive customization.
 
 ```ts
+import { generateAvatarSvg } from '@lueur/avatar';
+
 // Custom size and specific colors
 const customColorsAvatar = generateAvatarSvg('Sarah Connor', {
   width: 80,
@@ -145,7 +150,7 @@ You can directly embed the generated SVG string into your HTML:
   </div>
 
   <script type="module">
-    import { generateAvatarSvg } from './your-avatar-package-path.js';
+    import { generateAvatarSvg } from '@lueur/avatar';
 
     document.getElementById('johnDoeAvatar').innerHTML = generateAvatarSvg('John Doe');
     document.getElementById('aliceCircular').innerHTML = generateAvatarSvg('Alice', { shape: 'circle', width: 60, height: 60 });
@@ -161,8 +166,7 @@ You can directly embed the generated SVG string into your HTML:
 You can also use the SVG string as a data URI in an `<img>` tag:
 
 ```ts
-const svgString = generateAvatarSvg('Emma Watson', { width: 50, height: 50 });
-const dataUri = `data:image/svg+xml;base64,${btoa(svgString)}`;
+const dataUri = generateAvatarDataUri('Emma Watson', { width: 50, height: 50 });
 
 // In JSX
 // <img src={dataUri} alt="Emma Watson Avatar" />
@@ -179,6 +183,17 @@ The main function to create an SVG avatar.
 * `username` (string, required): The name of the user. Initials will be derived from this unless `options.text` is provided.
 * `options` (AvatarOptions, optional): An object to customize the avatar's appearance.
 * **Returns:** A string containing the complete SVG markup.
+
+---
+
+### `generateAvatarData(username: string, options?: AvatarOptions): string`
+
+This function uses `generateAvatarSvg` function (above) to generate an svg string.
+It then generates a base64 string that can be used as an image data uri to display the avatar as an actual image.
+
+* `username` (string, required): The name of the user. Initials will be derived from this unless `options.text` is provided.
+* `options` (AvatarOptions, optional): An object to customize the avatar's appearance.
+* **Returns:** A string containing the base64 value of the SVG image.
 
 ---
 

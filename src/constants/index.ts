@@ -1,0 +1,1 @@
+export { DEFAULT_AVATAR_OPTIONS } from './avatar';

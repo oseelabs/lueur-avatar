@@ -1,0 +1,1 @@
+export type { AvatarShape, AvatarOptions } from './avatar';
