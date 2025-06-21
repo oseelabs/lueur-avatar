@@ -1,19 +1,17 @@
 # `@lueur/avatar`
-
 [![npm version](https://img.shields.io/npm/v/@lueur/avatar)](https://www.npmjs.com/package/@lueur/avatar)
 [![npm downloads](https://img.shields.io/npm/dt/@lueur/avatar.svg)](https://www.npmjs.com/package/@lueur/avatar)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![bundlephobia](https://badgen.net/bundlephobia/min/@lueur/avatar)](https://bundlephobia.com/package/@lueur/avatar)
 [![Last Commit](https://img.shields.io/github/last-commit/oseelabs/lueur-avatar)](https://github.com/oseelabs/lueur-avatar)
 
-
-A lightweight and customizable TypeScript package for generating beautiful SVG user avatars based on usernames or custom text. Perfect for displaying initials as a fallback or primary user icon.
+A lightweight and customizable TypeScript package for generating beautiful SVG user avatars based on usernames or custom text.
 
 ---
 
 ## Table of Contents
 
-* [Features](#features)
+* [Features](#key-features)
 * [Installation](#installation)
 * [Usage](#usage)
 
@@ -22,7 +20,8 @@ A lightweight and customizable TypeScript package for generating beautiful SVG u
   * [Using Avatars in HTML](#using-avatars-in-html)
 * [API Reference](#api-reference)
 
-  * [`generateAvatarSvg(username, options)`](#generateavatarsvgusername-options)
+  * [`generateAvatarSvg(username, options)`](#generateavatarsvgusername-string-options-avataroptions-string)
+  * [`generateAvatarDataUri(username, options)`](#generateavatardatauriusername-string-options-avataroptions-string)
   * [`AvatarOptions` Interface](#avataroptions-interface)
   * [`AvatarShape` Type](#avatarshape-type)
 * [How It Works](#how-it-works)
@@ -31,13 +30,13 @@ A lightweight and customizable TypeScript package for generating beautiful SVG u
 
 ---
 
-## Features
+## Key Features
 
-* **Generate SVG Avatars:** Outputs a complete SVG string you can use directly in HTML or as a data URI.
-* **Username-Based Initials:** Automatically extracts initials from a given username (e.g., "John Doe" becomes "JD").
-* **Deterministic Colors:** Generates consistent, aesthetically pleasing background colors for each unique username.
-* **Automatic Text Contrast:** Ensures initials are always readable by choosing an appropriate black or white text color.
-* **Highly Customizable:**
+- 🎨 **Generate SVG Avatars:** Outputs a complete SVG string you can use directly in HTML or as a data URI.
+- 👤 **Username-Based Initials:** Automatically extracts initials from a given username (e.g., "John Doe" becomes "JD").
+- 🎯 **Deterministic Colors:** Generates consistent, aesthetically pleasing background colors for each unique username.
+- 🔄 **Automatic Text Contrast:** Ensures initials are always readable by choosing an appropriate black or white text color.
+- ⚙️ **Highly Customizable:**
 
   * Set **width** and **height**.
   * Choose **square** or **circle** shapes.
@@ -45,7 +44,7 @@ A lightweight and customizable TypeScript package for generating beautiful SVG u
   * Control **initials length**, **font family**, and **font size**.
   * Provide **custom text** instead of initials.
   * Add **arbitrary SVG attributes** to the root element.
-* **TypeScript Support:** Fully typed for a great developer experience in TypeScript projects.
+- 📦 **TypeScript Support:** Fully typed for a great developer experience in TypeScript projects.
 
 ---
 
