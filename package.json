@@ -1,0 +1,33 @@
+{
+  "name": "@lueur/avatar",
+  "version": "0.1.1",
+  "description": "A TypeScript package to generate customizable SVG user avatars.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "./dist/**",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "avatar",
+    "svg",
+    "typescript",
+    "user-avatar",
+    "initials",
+    "placeholder"
+  ],
+  "author": {
+    "name": "Lazaro Osee",
+    "email": "lazarooseeofficial@gmail.com",
+    "url": "https://oseelabs.org/"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/oseelabs/lueur-avatar#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
