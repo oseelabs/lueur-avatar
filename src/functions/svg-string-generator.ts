@@ -6,23 +6,55 @@ import {
   getColorFromHash,
   getContrastingTextColor,
   getInitials,
-} from "../utils/avatar";
+} from "../utils";
 
 /**
- * Generates an SVG string for a user avatar based on a username and provided options.
- * 
- * @category Generator Functions
- * @categoryDescription The main functions to generate the avatar.
- * @author Lazaro Osee
- * @showCategory
- * 
- * @param {number} username The name of the user for whom to generate the avatar.
- * @param {AvatarOptions} options Customization options for the avatar.
- * @returns {string} A string containing the SVG representation of the avatar.
+ * Generates an SVG avatar based on the provided username and customization options.
+ *
+ * @param {string} username - The name or identifier used to generate the avatar.
+ * @param {AvatarOptions} [options] - Optional customization settings for the avatar.
+ * @param {number} [options.width=100] - Width of the avatar in pixels.
+ * @param {number} [options.height=100] - Height of the avatar in pixels.
+ * @param {string} [options.backgroundColor] - Background color of the avatar.
+ *    If not provided, it is generated from the username hash.
+ * @param {string} [options.textColor] - Color of the text in the avatar.
+ *    If not provided, it is derived for proper contrast with the background color.
+ * @param {string} [options.shape="square"] - Shape of the avatar background ("circle" or "square").
+ * @param {number} [options.initialsLength=2] - Number of characters to use for the avatar's initials.
+ * @param {string} [options.fontFamily="Arial, sans-serif"] - Font family for the text inside the avatar.
+ * @param {number} [options.fontSize] - Font size for the text. If not provided,
+ *    it is calculated based on the avatar dimensions.
+ * @param {string} [options.text] - Custom text to display in the avatar. If not provided,
+ *    initials are generated from the username.
+ * @param {Object} [options.svgAttributes={}] - Additional attributes to add to the root SVG element.
+ *
+ * @return {string} The generated avatar SVG as a string.
+ *
+ * @example
+ * // Generate a basic square avatar
+ * const svg = generateAvatarSvg('johndoe');
+ *
+ * @example
+ * // Generate a circular avatar with custom colors
+ * const svg = generateAvatarSvg('janedoe', {
+ *   shape: 'circle',
+ *   backgroundColor: '#FF0000',
+ *   textColor: '#FFFFFF'
+ * });
+ *
+ * @example
+ * // Generate an avatar with custom size and text
+ * const svg = generateAvatarSvg('bobsmith', {
+ *   width: 200,
+ *   height: 200,
+ *   text: 'BS',
+ *   fontSize: 48,
+ *   svgAttributes: { class: 'custom-avatar' }
+ * });
  */
 export function generateAvatarSvg(
-  username: string,
-  options?: AvatarOptions
+    username: string,
+    options?: AvatarOptions
 ): string {
   // Merge default options with user-provided options
   const mergedOptions: Required<AvatarOptions> = {
@@ -55,21 +87,21 @@ export function generateAvatarSvg(
 
   // Generate background color if not provided
   const effectiveBackgroundColor =
-    backgroundColor || getColorFromHash(stringToHash(username));
+      backgroundColor || getColorFromHash(stringToHash(username));
 
   // Determine text color if not provided
   const effectiveTextColor =
-    textColor || getContrastingTextColor(effectiveBackgroundColor);
+      textColor || getContrastingTextColor(effectiveBackgroundColor);
 
   // Calculate font size if not explicitly provided
   const effectiveFontSize =
-    fontSize > 0 ? fontSize : Math.min(effectiveWidth, effectiveHeight) * 0.4; // 40% of the smaller dimension
+      fontSize > 0 ? fontSize : Math.min(effectiveWidth, effectiveHeight) * 0.4; // 40% of the smaller dimension
 
-  let backgroundShape = "";
+  let backgroundShape: string;
   if (shape === "circle") {
     const radius = Math.min(effectiveWidth, effectiveHeight) / 2;
     backgroundShape = `<circle cx="${effectiveWidth / 2}" cy="${
-      effectiveHeight / 2
+        effectiveHeight / 2
     }" r="${radius}" fill="${effectiveBackgroundColor}" />`;
   } else {
     // Default to square/rectangle
@@ -78,8 +110,8 @@ export function generateAvatarSvg(
 
   // Convert additional SVG attributes to a string
   const additionalSvgAttrs = Object.entries(svgAttributes)
-    .map(([key, value]) => `${key}="${value}"`)
-    .join(" ");
+      .map(([key, value]) => `${key}="${value}"`)
+      .join(" ");
 
   return `
     <svg width="${effectiveWidth}" height="${effectiveHeight}" viewBox="0 0 ${effectiveWidth} ${effectiveHeight}" fill="none" xmlns="http://www.w3.org/2000/svg" ${additionalSvgAttrs}>
