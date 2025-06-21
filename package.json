@@ -37,12 +37,25 @@
     "url": "https://oseelabs.org/"
   },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oseelabs/lueur-avatar/issues"
+  },
   "homepage": "https://oseelabs.github.io/lueur-avatar",
   "repository": {
     "url": "https://github.com/oseelabs/lueur-avatar",
     "directory": ".",
     "type": "git"
   },
+  "contributors": [
+    {
+      "name": "Lazaro Osee",
+      "email": "stingerdeveloperske@gmail.com",
+      "url": "https://oseelabs.org"
+    }
+  ],
+  "funding": [
+    "https://ko-fi.com/lazaroodira"
+  ],
   "devDependencies": {
     "@types/node": "^24.0.3",
     "gh-pages": "^6.3.0",
