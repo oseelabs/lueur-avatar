@@ -37,7 +37,12 @@
     "url": "https://oseelabs.org/"
   },
   "license": "MIT",
-  "homepage": "https://github.com/oseelabs/lueur-avatar#readme",
+  "homepage": "https://oseelabs.github.io/lueur-avatar",
+  "repository": {
+    "url": "https://github.com/oseelabs/lueur-avatar",
+    "directory": ".",
+    "type": "git"
+  },
   "devDependencies": {
     "@types/node": "^24.0.3",
     "gh-pages": "^6.3.0",
