@@ -1,0 +1,308 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="./"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@lueur/avatar - v0.1.2</title><meta name="description" content="Documentation for @lueur/avatar"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script><style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #f6be46;
+    --md-sys-color-on-primary: #412d00;
+    --md-sys-color-primary-container: #5d4200;
+    --md-sys-color-on-primary-container: #ffdea3;
+    --md-sys-color-secondary: #d9c4a0;
+    --md-sys-color-on-secondary: #3b2f15;
+    --md-sys-color-secondary-container: #53452a;
+    --md-sys-color-on-secondary-container: #f6e0bb;
+    --md-sys-color-tertiary: #b2cfa8;
+    --md-sys-color-on-tertiary: #1e361a;
+    --md-sys-color-tertiary-container: #344d2f;
+    --md-sys-color-on-tertiary-container: #cdebc2;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffb4ab;
+    --md-sys-color-background: #1e1b16;
+    --md-sys-color-on-background: #e9e1d9;
+    --md-sys-color-surface: #1e1b16;
+    --md-sys-color-on-surface: #e9e1d9;
+    --md-sys-color-surface-variant: #4e4639;
+    --md-sys-color-on-surface-variant: #d1c5b4;
+    --md-sys-color-outline: #9a8f80;
+    --md-sys-color-outline-variant: #4e4639;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #e9e1d9;
+    --md-sys-color-inverse-on-surface: #34302a;
+    --md-sys-color-inverse-primary: #7a5900;
+    --md-sys-color-surface-dim: #16130e;
+    --md-sys-color-surface-bright: #3d3933;
+    --md-sys-color-surface-container-lowest: #110e09;
+    --md-sys-color-surface-container-low: #1e1b16;
+    --md-sys-color-surface-container: #221f1a;
+    --md-sys-color-surface-container-high: #2d2924;
+    --md-sys-color-surface-container-highest: #38342e
+  }
+}
+:root[data-theme="dark"] {
+  --md-sys-color-primary: #f6be46;
+  --md-sys-color-on-primary: #412d00;
+  --md-sys-color-primary-container: #5d4200;
+  --md-sys-color-on-primary-container: #ffdea3;
+  --md-sys-color-secondary: #d9c4a0;
+  --md-sys-color-on-secondary: #3b2f15;
+  --md-sys-color-secondary-container: #53452a;
+  --md-sys-color-on-secondary-container: #f6e0bb;
+  --md-sys-color-tertiary: #b2cfa8;
+  --md-sys-color-on-tertiary: #1e361a;
+  --md-sys-color-tertiary-container: #344d2f;
+  --md-sys-color-on-tertiary-container: #cdebc2;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffb4ab;
+  --md-sys-color-background: #1e1b16;
+  --md-sys-color-on-background: #e9e1d9;
+  --md-sys-color-surface: #1e1b16;
+  --md-sys-color-on-surface: #e9e1d9;
+  --md-sys-color-surface-variant: #4e4639;
+  --md-sys-color-on-surface-variant: #d1c5b4;
+  --md-sys-color-outline: #9a8f80;
+  --md-sys-color-outline-variant: #4e4639;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #e9e1d9;
+  --md-sys-color-inverse-on-surface: #34302a;
+  --md-sys-color-inverse-primary: #7a5900;
+  --md-sys-color-surface-dim: #16130e;
+  --md-sys-color-surface-bright: #3d3933;
+  --md-sys-color-surface-container-lowest: #110e09;
+  --md-sys-color-surface-container-low: #1e1b16;
+  --md-sys-color-surface-container: #221f1a;
+  --md-sys-color-surface-container-high: #2d2924;
+  --md-sys-color-surface-container-highest: #38342e
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --md-sys-color-primary: #7a5900;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #ffdea3;
+    --md-sys-color-on-primary-container: #261900;
+    --md-sys-color-secondary: #6c5c3f;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #f6e0bb;
+    --md-sys-color-on-secondary-container: #251a04;
+    --md-sys-color-tertiary: #4b6545;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #cdebc2;
+    --md-sys-color-on-tertiary-container: #092007;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-background: #fffbff;
+    --md-sys-color-on-background: #1e1b16;
+    --md-sys-color-surface: #fffbff;
+    --md-sys-color-on-surface: #1e1b16;
+    --md-sys-color-surface-variant: #ede1cf;
+    --md-sys-color-on-surface-variant: #4e4639;
+    --md-sys-color-outline: #7f7667;
+    --md-sys-color-outline-variant: #d1c5b4;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #34302a;
+    --md-sys-color-inverse-on-surface: #f8efe7;
+    --md-sys-color-inverse-primary: #f6be46;
+    --md-sys-color-surface-dim: #e1d9d0;
+    --md-sys-color-surface-bright: #fff8f2;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #fbf2e9;
+    --md-sys-color-surface-container: #f5ede4;
+    --md-sys-color-surface-container-high: #efe7de;
+    --md-sys-color-surface-container-highest: #e9e1d9
+  }
+}
+:root[data-theme="light"] {
+  --md-sys-color-primary: #7a5900;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #ffdea3;
+  --md-sys-color-on-primary-container: #261900;
+  --md-sys-color-secondary: #6c5c3f;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #f6e0bb;
+  --md-sys-color-on-secondary-container: #251a04;
+  --md-sys-color-tertiary: #4b6545;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #cdebc2;
+  --md-sys-color-on-tertiary-container: #092007;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #fffbff;
+  --md-sys-color-on-background: #1e1b16;
+  --md-sys-color-surface: #fffbff;
+  --md-sys-color-on-surface: #1e1b16;
+  --md-sys-color-surface-variant: #ede1cf;
+  --md-sys-color-on-surface-variant: #4e4639;
+  --md-sys-color-outline: #7f7667;
+  --md-sys-color-outline-variant: #d1c5b4;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #34302a;
+  --md-sys-color-inverse-on-surface: #f8efe7;
+  --md-sys-color-inverse-primary: #f6be46;
+  --md-sys-color-surface-dim: #e1d9d0;
+  --md-sys-color-surface-bright: #fff8f2;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #fbf2e9;
+  --md-sys-color-surface-container: #f5ede4;
+  --md-sys-color-surface-container-high: #efe7de;
+  --md-sys-color-surface-container-highest: #e9e1d9
+}
+</style><link rel="stylesheet" href="assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="index.html" class="title">@lueur/avatar - v0.1.2</a><div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h1>@lueur/avatar - v0.1.2</h1></div><div class="tsd-panel tsd-typography"><h1 id="lueuravatar" class="tsd-anchor-link"><code>@lueur/avatar</code><a href="#lueuravatar" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1><p><a href="https://www.npmjs.com/package/@lueur/avatar"><img src="https://img.shields.io/npm/v/@lueur/avatar" alt="npm version"></a>
+<a href="https://www.npmjs.com/package/@lueur/avatar"><img src="https://img.shields.io/npm/dt/@lueur/avatar.svg" alt="npm downloads"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+<a href="https://bundlephobia.com/package/@lueur/avatar"><img src="https://badgen.net/bundlephobia/min/@lueur/avatar" alt="bundlephobia"></a>
+<a href="https://github.com/oseelabs/lueur-avatar"><img src="https://img.shields.io/github/last-commit/oseelabs/lueur-avatar" alt="Last Commit"></a></p>
+<p>A lightweight and customizable TypeScript package for generating beautiful SVG user avatars based on usernames or custom text. Perfect for displaying initials as a fallback or primary user icon.</p>
+<hr>
+<h2 id="table-of-contents" class="tsd-anchor-link">Table of Contents<a href="#table-of-contents" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>
+<p><a href="#features">Features</a></p>
+</li>
+<li>
+<p><a href="#installation">Installation</a></p>
+</li>
+<li>
+<p><a href="#usage">Usage</a></p>
+<ul>
+<li><a href="#basic-usage">Basic Usage</a></li>
+<li><a href="#customizing-avatars">Customizing Avatars</a></li>
+<li><a href="#using-avatars-in-html">Using Avatars in HTML</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#api-reference">API Reference</a></p>
+<ul>
+<li><a href="#generateavatarsvgusername-options"><code>generateAvatarSvg(username, options)</code></a></li>
+<li><a href="#avataroptions-interface"><code>AvatarOptions</code> Interface</a></li>
+<li><a href="#avatarshape-type"><code>AvatarShape</code> Type</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#how-it-works">How It Works</a></p>
+</li>
+<li>
+<p><a href="#contributing">Contributing</a></p>
+</li>
+<li>
+<p><a href="#license">License</a></p>
+</li>
+</ul>
+<hr>
+<h2 id="features" class="tsd-anchor-link">Features<a href="#features" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>
+<p><strong>Generate SVG Avatars:</strong> Outputs a complete SVG string you can use directly in HTML or as a data URI.</p>
+</li>
+<li>
+<p><strong>Username-Based Initials:</strong> Automatically extracts initials from a given username (e.g., &quot;John Doe&quot; becomes &quot;JD&quot;).</p>
+</li>
+<li>
+<p><strong>Deterministic Colors:</strong> Generates consistent, aesthetically pleasing background colors for each unique username.</p>
+</li>
+<li>
+<p><strong>Automatic Text Contrast:</strong> Ensures initials are always readable by choosing an appropriate black or white text color.</p>
+</li>
+<li>
+<p><strong>Highly Customizable:</strong></p>
+<ul>
+<li>Set <strong>width</strong> and <strong>height</strong>.</li>
+<li>Choose <strong>square</strong> or <strong>circle</strong> shapes.</li>
+<li>Override <strong>background</strong> and <strong>text colors</strong>.</li>
+<li>Control <strong>initials length</strong>, <strong>font family</strong>, and <strong>font size</strong>.</li>
+<li>Provide <strong>custom text</strong> instead of initials.</li>
+<li>Add <strong>arbitrary SVG attributes</strong> to the root element.</li>
+</ul>
+</li>
+<li>
+<p><strong>TypeScript Support:</strong> Fully typed for a great developer experience in TypeScript projects.</p>
+</li>
+</ul>
+<hr>
+<h2 id="installation" class="tsd-anchor-link">Installation<a href="#installation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>You can install the package using <code>npm</code> or <code>yarn</code>:</p>
+<pre><code class="bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span><span class="hl-1"> </span><span class="hl-2">@lueur/avatar</span><br/><span class="hl-3"># or</span><br/><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">add</span><span class="hl-1"> </span><span class="hl-2">@lueur/avatar</span>
+</code><button type="button">Copy</button></pre>
+
+<hr>
+<h2 id="usage" class="tsd-anchor-link">Usage<a href="#usage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><h3 id="basic-usage" class="tsd-anchor-link">Basic Usage<a href="#basic-usage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><p>Import <code>generateAvatarSvg</code> and pass a username. By default, it creates a 100x100 square avatar with two initials and a deterministically generated background color.</p>
+<pre><code class="ts"><span class="hl-4">import</span><span class="hl-1"> { </span><span class="hl-5">generateAvatarSvg</span><span class="hl-1"> } </span><span class="hl-4">from</span><span class="hl-1"> </span><span class="hl-2">&#39;@lueur/avatar&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-3">// Generate a basic avatar SVG string for &quot;John Doe&quot;</span><br/><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">johnDoeAvatar</span><span class="hl-1"> = </span><span class="hl-0">generateAvatarSvg</span><span class="hl-1">(</span><span class="hl-2">&#39;John Doe&#39;</span><span class="hl-1">);</span><br/><span class="hl-5">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">(</span><span class="hl-5">johnDoeAvatar</span><span class="hl-1">);</span>
+</code><button type="button">Copy</button></pre>
+
+<h3 id="customizing-avatars" class="tsd-anchor-link">Customizing Avatars<a href="#customizing-avatars" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><p>The <code>generateAvatarSvg</code> function accepts an optional options object for extensive customization.</p>
+<pre><code class="ts"><span class="hl-4">import</span><span class="hl-1"> { </span><span class="hl-5">generateAvatarSvg</span><span class="hl-1"> } </span><span class="hl-4">from</span><span class="hl-1"> </span><span class="hl-2">&#39;@lueur/avatar&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-3">// Custom size and specific colors</span><br/><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">customColorsAvatar</span><span class="hl-1"> = </span><span class="hl-0">generateAvatarSvg</span><span class="hl-1">(</span><span class="hl-2">&#39;Sarah Connor&#39;</span><span class="hl-1">, {</span><br/><span class="hl-1">  </span><span class="hl-5">width:</span><span class="hl-1"> </span><span class="hl-8">80</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">height:</span><span class="hl-1"> </span><span class="hl-8">80</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">backgroundColor:</span><span class="hl-1"> </span><span class="hl-2">&#39;#3498db&#39;</span><span class="hl-1">, </span><span class="hl-3">// A nice blue</span><br/><span class="hl-1">  </span><span class="hl-5">textColor:</span><span class="hl-1"> </span><span class="hl-2">&#39;#ffffff&#39;</span><span class="hl-1">,       </span><span class="hl-3">// White text</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-3">// Circular avatar with a single initial and custom font</span><br/><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">circularAvatar</span><span class="hl-1"> = </span><span class="hl-0">generateAvatarSvg</span><span class="hl-1">(</span><span class="hl-2">&#39;Michael B Jordan&#39;</span><span class="hl-1">, {</span><br/><span class="hl-1">  </span><span class="hl-5">width:</span><span class="hl-1"> </span><span class="hl-8">60</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">height:</span><span class="hl-1"> </span><span class="hl-8">60</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">shape:</span><span class="hl-1"> </span><span class="hl-2">&#39;circle&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">initialsLength:</span><span class="hl-1"> </span><span class="hl-8">1</span><span class="hl-1">, </span><span class="hl-3">// Only show &quot;M&quot;</span><br/><span class="hl-1">  </span><span class="hl-5">fontFamily:</span><span class="hl-1"> </span><span class="hl-2">&#39;Verdana, sans-serif&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">fontSize:</span><span class="hl-1"> </span><span class="hl-8">30</span><span class="hl-1">,</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-3">// Avatar with custom text and additional SVG attributes</span><br/><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">specialAvatar</span><span class="hl-1"> = </span><span class="hl-0">generateAvatarSvg</span><span class="hl-1">(</span><span class="hl-2">&#39;Guest User&#39;</span><span class="hl-1">, {</span><br/><span class="hl-1">  </span><span class="hl-5">width:</span><span class="hl-1"> </span><span class="hl-8">120</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">height:</span><span class="hl-1"> </span><span class="hl-8">120</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">backgroundColor:</span><span class="hl-1"> </span><span class="hl-2">&#39;#FF6600&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">textColor:</span><span class="hl-1"> </span><span class="hl-2">&#39;#000000&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">text:</span><span class="hl-1"> </span><span class="hl-2">&#39;GU&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-5">svgAttributes:</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-2">&#39;data-user-id&#39;</span><span class="hl-5">:</span><span class="hl-1"> </span><span class="hl-2">&#39;guest-123&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-2">&#39;class&#39;</span><span class="hl-5">:</span><span class="hl-1"> </span><span class="hl-2">&#39;avatar-icon&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-2">&#39;title&#39;</span><span class="hl-5">:</span><span class="hl-1"> </span><span class="hl-2">&#39;Guest Avatar&#39;</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">});</span>
+</code><button type="button">Copy</button></pre>
+
+<h3 id="using-avatars-in-html" class="tsd-anchor-link">Using Avatars in HTML<a href="#using-avatars-in-html" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><p>You can directly embed the generated SVG string into your HTML:</p>
+<pre><code class="html"><span class="hl-9">&lt;!</span><span class="hl-10">DOCTYPE</span><span class="hl-1"> </span><span class="hl-11">html</span><span class="hl-9">&gt;</span><br/><span class="hl-9">&lt;</span><span class="hl-10">html</span><span class="hl-1"> </span><span class="hl-11">lang</span><span class="hl-1">=</span><span class="hl-12">&quot;en&quot;</span><span class="hl-9">&gt;</span><br/><span class="hl-9">&lt;</span><span class="hl-10">head</span><span class="hl-9">&gt;</span><br/><span class="hl-1">  </span><span class="hl-9">&lt;</span><span class="hl-10">meta</span><span class="hl-1"> </span><span class="hl-11">charset</span><span class="hl-1">=</span><span class="hl-12">&quot;UTF-8&quot;</span><span class="hl-1"> </span><span class="hl-9">/&gt;</span><br/><span class="hl-1">  </span><span class="hl-9">&lt;</span><span class="hl-10">meta</span><span class="hl-1"> </span><span class="hl-11">name</span><span class="hl-1">=</span><span class="hl-12">&quot;viewport&quot;</span><span class="hl-1"> </span><span class="hl-11">content</span><span class="hl-1">=</span><span class="hl-12">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="hl-1"> </span><span class="hl-9">/&gt;</span><br/><span class="hl-1">  </span><span class="hl-9">&lt;</span><span class="hl-10">title</span><span class="hl-9">&gt;</span><span class="hl-1">Avatar Examples</span><span class="hl-9">&lt;/</span><span class="hl-10">title</span><span class="hl-9">&gt;</span><br/><span class="hl-1">  </span><span class="hl-9">&lt;</span><span class="hl-10">style</span><span class="hl-9">&gt;</span><br/><span class="hl-13">    </span><span class="hl-14">body</span><span class="hl-13"> { </span><span class="hl-11">font-family</span><span class="hl-13">: </span><span class="hl-15">sans-serif</span><span class="hl-13">; </span><span class="hl-11">display</span><span class="hl-13">: </span><span class="hl-15">flex</span><span class="hl-13">; </span><span class="hl-11">flex-wrap</span><span class="hl-13">: </span><span class="hl-15">wrap</span><span class="hl-13">; </span><span class="hl-11">gap</span><span class="hl-13">: </span><span class="hl-8">20px</span><span class="hl-13">; </span><span class="hl-11">padding</span><span class="hl-13">: </span><span class="hl-8">20px</span><span class="hl-13">; }</span><br/><span class="hl-13">    </span><span class="hl-14">.avatar-container</span><span class="hl-13"> { </span><span class="hl-11">text-align</span><span class="hl-13">: </span><span class="hl-15">center</span><span class="hl-13">; }</span><br/><span class="hl-13">    </span><span class="hl-14">.avatar-container</span><span class="hl-13"> </span><span class="hl-14">p</span><span class="hl-13"> { </span><span class="hl-11">margin-top</span><span class="hl-13">: </span><span class="hl-8">5px</span><span class="hl-13">; </span><span class="hl-11">font-size</span><span class="hl-13">: </span><span class="hl-8">0.9em</span><span class="hl-13">; </span><span class="hl-11">color</span><span class="hl-13">: </span><span class="hl-15">#555</span><span class="hl-13">; }</span><br/><span class="hl-13">    </span><span class="hl-14">.my-custom-class</span><span class="hl-13"> { </span><span class="hl-11">border</span><span class="hl-13">: </span><span class="hl-8">2px</span><span class="hl-13"> </span><span class="hl-15">solid</span><span class="hl-13"> </span><span class="hl-15">purple</span><span class="hl-13">; </span><span class="hl-11">border-radius</span><span class="hl-13">: </span><span class="hl-8">8px</span><span class="hl-13">; }</span><br/><span class="hl-13">  </span><span class="hl-9">&lt;/</span><span class="hl-10">style</span><span class="hl-9">&gt;</span><br/><span class="hl-9">&lt;/</span><span class="hl-10">head</span><span class="hl-9">&gt;</span><br/><span class="hl-9">&lt;</span><span class="hl-10">body</span><span class="hl-9">&gt;</span><br/><span class="hl-1">  </span><span class="hl-9">&lt;</span><span class="hl-10">div</span><span class="hl-1"> </span><span class="hl-11">class</span><span class="hl-1">=</span><span class="hl-12">&quot;avatar-container&quot;</span><span class="hl-9">&gt;</span><br/><span class="hl-1">    </span><span class="hl-9">&lt;</span><span class="hl-10">div</span><span class="hl-1"> </span><span class="hl-11">id</span><span class="hl-1">=</span><span class="hl-12">&quot;johnDoeAvatar&quot;</span><span class="hl-9">&gt;&lt;/</span><span class="hl-10">div</span><span class="hl-9">&gt;</span><br/><span class="hl-1">    </span><span class="hl-9">&lt;</span><span class="hl-10">p</span><span class="hl-9">&gt;</span><span class="hl-1">John Doe</span><span class="hl-9">&lt;/</span><span class="hl-10">p</span><span class="hl-9">&gt;</span><br/><span class="hl-1">  </span><span class="hl-9">&lt;/</span><span class="hl-10">div</span><span class="hl-9">&gt;</span><br/><br/><span class="hl-1">  </span><span class="hl-9">&lt;</span><span class="hl-10">div</span><span class="hl-1"> </span><span class="hl-11">class</span><span class="hl-1">=</span><span class="hl-12">&quot;avatar-container&quot;</span><span class="hl-9">&gt;</span><br/><span class="hl-1">    </span><span class="hl-9">&lt;</span><span class="hl-10">div</span><span class="hl-1"> </span><span class="hl-11">id</span><span class="hl-1">=</span><span class="hl-12">&quot;aliceCircular&quot;</span><span class="hl-9">&gt;&lt;/</span><span class="hl-10">div</span><span class="hl-9">&gt;</span><br/><span class="hl-1">    </span><span class="hl-9">&lt;</span><span class="hl-10">p</span><span class="hl-9">&gt;</span><span class="hl-1">Alice (Circular)</span><span class="hl-9">&lt;/</span><span class="hl-10">p</span><span class="hl-9">&gt;</span><br/><span class="hl-1">  </span><span class="hl-9">&lt;/</span><span class="hl-10">div</span><span class="hl-9">&gt;</span><br/><br/><span class="hl-1">  </span><span class="hl-9">&lt;</span><span class="hl-10">div</span><span class="hl-1"> </span><span class="hl-11">class</span><span class="hl-1">=</span><span class="hl-12">&quot;avatar-container&quot;</span><span class="hl-9">&gt;</span><br/><span class="hl-1">    </span><span class="hl-9">&lt;</span><span class="hl-10">div</span><span class="hl-1"> </span><span class="hl-11">id</span><span class="hl-1">=</span><span class="hl-12">&quot;customAttrAvatar&quot;</span><span class="hl-9">&gt;&lt;/</span><span class="hl-10">div</span><span class="hl-9">&gt;</span><br/><span class="hl-1">    </span><span class="hl-9">&lt;</span><span class="hl-10">p</span><span class="hl-9">&gt;</span><span class="hl-1">Custom Attrs</span><span class="hl-9">&lt;/</span><span class="hl-10">p</span><span class="hl-9">&gt;</span><br/><span class="hl-1">  </span><span class="hl-9">&lt;/</span><span class="hl-10">div</span><span class="hl-9">&gt;</span><br/><br/><span class="hl-1">  </span><span class="hl-9">&lt;</span><span class="hl-10">script</span><span class="hl-13"> </span><span class="hl-11">type</span><span class="hl-13">=</span><span class="hl-12">&quot;module&quot;</span><span class="hl-9">&gt;</span><br/><span class="hl-13">    </span><span class="hl-4">import</span><span class="hl-13"> { </span><span class="hl-5">generateAvatarSvg</span><span class="hl-13"> } </span><span class="hl-4">from</span><span class="hl-13"> </span><span class="hl-2">&#39;@lueur/avatar&#39;</span><span class="hl-13">;</span><br/><br/><span class="hl-13">    </span><span class="hl-5">document</span><span class="hl-13">.</span><span class="hl-0">getElementById</span><span class="hl-13">(</span><span class="hl-2">&#39;johnDoeAvatar&#39;</span><span class="hl-13">).</span><span class="hl-5">innerHTML</span><span class="hl-13"> </span><span class="hl-1">=</span><span class="hl-13"> </span><span class="hl-0">generateAvatarSvg</span><span class="hl-13">(</span><span class="hl-2">&#39;John Doe&#39;</span><span class="hl-13">);</span><br/><span class="hl-13">    </span><span class="hl-5">document</span><span class="hl-13">.</span><span class="hl-0">getElementById</span><span class="hl-13">(</span><span class="hl-2">&#39;aliceCircular&#39;</span><span class="hl-13">).</span><span class="hl-5">innerHTML</span><span class="hl-13"> </span><span class="hl-1">=</span><span class="hl-13"> </span><span class="hl-0">generateAvatarSvg</span><span class="hl-13">(</span><span class="hl-2">&#39;Alice&#39;</span><span class="hl-13">, { </span><span class="hl-5">shape:</span><span class="hl-13"> </span><span class="hl-2">&#39;circle&#39;</span><span class="hl-13">, </span><span class="hl-5">width:</span><span class="hl-13"> </span><span class="hl-8">60</span><span class="hl-13">, </span><span class="hl-5">height:</span><span class="hl-13"> </span><span class="hl-8">60</span><span class="hl-13"> });</span><br/><span class="hl-13">    </span><span class="hl-5">document</span><span class="hl-13">.</span><span class="hl-0">getElementById</span><span class="hl-13">(</span><span class="hl-2">&#39;customAttrAvatar&#39;</span><span class="hl-13">).</span><span class="hl-5">innerHTML</span><span class="hl-13"> </span><span class="hl-1">=</span><span class="hl-13"> </span><span class="hl-0">generateAvatarSvg</span><span class="hl-13">(</span><span class="hl-2">&#39;Bob Smith&#39;</span><span class="hl-13">, {</span><br/><span class="hl-13">      </span><span class="hl-5">width:</span><span class="hl-13"> </span><span class="hl-8">70</span><span class="hl-13">, </span><span class="hl-5">height:</span><span class="hl-13"> </span><span class="hl-8">70</span><span class="hl-13">, </span><span class="hl-5">initialsLength:</span><span class="hl-13"> </span><span class="hl-8">2</span><span class="hl-13">,</span><br/><span class="hl-13">      </span><span class="hl-5">svgAttributes:</span><span class="hl-13"> { </span><span class="hl-5">class:</span><span class="hl-13"> </span><span class="hl-2">&#39;my-custom-class&#39;</span><span class="hl-13"> }</span><br/><span class="hl-13">    });</span><br/><span class="hl-13">  </span><span class="hl-9">&lt;/</span><span class="hl-10">script</span><span class="hl-9">&gt;</span><br/><span class="hl-9">&lt;/</span><span class="hl-10">body</span><span class="hl-9">&gt;</span><br/><span class="hl-9">&lt;/</span><span class="hl-10">html</span><span class="hl-9">&gt;</span>
+</code><button type="button">Copy</button></pre>
+
+<p>You can also use the SVG string as a data URI in an <code>&lt;img&gt;</code> tag:</p>
+<pre><code class="ts"><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">dataUri</span><span class="hl-1"> = </span><span class="hl-0">generateAvatarDataUri</span><span class="hl-1">(</span><span class="hl-2">&#39;Emma Watson&#39;</span><span class="hl-1">, { </span><span class="hl-5">width:</span><span class="hl-1"> </span><span class="hl-8">50</span><span class="hl-1">, </span><span class="hl-5">height:</span><span class="hl-1"> </span><span class="hl-8">50</span><span class="hl-1"> });</span><br/><br/><span class="hl-3">// In JSX</span><br/><span class="hl-3">// &lt;img src={dataUri} alt=&quot;Emma Watson Avatar&quot; /&gt;</span>
+</code><button type="button">Copy</button></pre>
+
+<hr>
+<h2 id="api-reference" class="tsd-anchor-link">API Reference<a href="#api-reference" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><h3 id="generateavatarsvgusername-string-options-avataroptions-string" class="tsd-anchor-link"><code>generateAvatarSvg(username: string, options?: AvatarOptions): string</code><a href="#generateavatarsvgusername-string-options-avataroptions-string" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><p>The main function to create an SVG avatar.</p>
+<ul>
+<li><code>username</code> (string, required): The name of the user. Initials will be derived from this unless <code>options.text</code> is provided.</li>
+<li><code>options</code> (AvatarOptions, optional): An object to customize the avatar's appearance.</li>
+<li><strong>Returns:</strong> A string containing the complete SVG markup.</li>
+</ul>
+<hr>
+<h3 id="generateavatardatauriusername-string-options-avataroptions-string" class="tsd-anchor-link"><code>generateAvatarDataUri(username: string, options?: AvatarOptions): string</code><a href="#generateavatardatauriusername-string-options-avataroptions-string" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><p>This function uses <code>generateAvatarSvg</code> function (above) to generate an svg string.
+It then generates a base64 string that can be used as an image data uri to display the avatar as an actual image.</p>
+<ul>
+<li><code>username</code> (string, required): The name of the user. Initials will be derived from this unless <code>options.text</code> is provided.</li>
+<li><code>options</code> (AvatarOptions, optional): An object to customize the avatar's appearance.</li>
+<li><strong>Returns:</strong> A string containing the base64 value of the SVG image.</li>
+</ul>
+<hr>
+<h3 id="avataroptions-interface" class="tsd-anchor-link"><code>AvatarOptions</code> Interface<a href="#avataroptions-interface" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><pre><code class="ts"><span class="hl-6">interface</span><span class="hl-1"> </span><span class="hl-16">AvatarOptions</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-5">width</span><span class="hl-1">?: </span><span class="hl-16">number</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-5">height</span><span class="hl-1">?: </span><span class="hl-16">number</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-5">backgroundColor</span><span class="hl-1">?: </span><span class="hl-16">string</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-5">textColor</span><span class="hl-1">?: </span><span class="hl-16">string</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-5">shape</span><span class="hl-1">?: </span><span class="hl-16">AvatarShape</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-5">initialsLength</span><span class="hl-1">?: </span><span class="hl-16">number</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-5">fontFamily</span><span class="hl-1">?: </span><span class="hl-16">string</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-5">fontSize</span><span class="hl-1">?: </span><span class="hl-16">number</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-5">text</span><span class="hl-1">?: </span><span class="hl-16">string</span><span class="hl-1">;</span><br/><span class="hl-1">  </span><span class="hl-5">svgAttributes</span><span class="hl-1">?: { [</span><span class="hl-5">key</span><span class="hl-1">: </span><span class="hl-16">string</span><span class="hl-1">]: </span><span class="hl-16">string</span><span class="hl-1"> };</span><br/><span class="hl-1">}</span>
+</code><button type="button">Copy</button></pre>
+
+<hr>
+<h3 id="avatarshape-type" class="tsd-anchor-link"><code>AvatarShape</code> Type<a href="#avatarshape-type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><pre><code class="ts"><span class="hl-6">type</span><span class="hl-1"> </span><span class="hl-16">AvatarShape</span><span class="hl-1"> = </span><span class="hl-2">&#39;square&#39;</span><span class="hl-1"> | </span><span class="hl-2">&#39;circle&#39;</span><span class="hl-1">;</span>
+</code><button type="button">Copy</button></pre>
+
+<hr>
+<h2 id="how-it-works" class="tsd-anchor-link">How It Works<a href="#how-it-works" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ol>
+<li><strong>Initials Extraction:</strong> Cleans and processes the username to extract initials. (e.g., &quot;Dr. John Paul Smith Jr.&quot; → &quot;JPS&quot;).</li>
+<li><strong>Color Generation:</strong> A hash from the username deterministically maps to a background color.</li>
+<li><strong>Text Contrast:</strong> Based on background luminance, text color is chosen as black or white for readability.</li>
+<li><strong>SVG Assembly:</strong> Combines options into a valid SVG string using the calculated styles and text.</li>
+</ol>
+<hr>
+<h2 id="contributing" class="tsd-anchor-link">Contributing<a href="#contributing" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>Contributions are welcome!</p>
+<ol>
+<li>Fork the repository.</li>
+<li>Create a new branch: <code>git checkout -b feature/your-feature-name</code></li>
+<li>Make your changes.</li>
+<li>Write tests.</li>
+<li>Commit: <code>git commit -m 'feat: Add feature'</code></li>
+<li>Push: <code>git push origin feature/your-feature-name</code></li>
+<li>Open a pull request.</li>
+</ol>
+<hr>
+<h2 id="license" class="tsd-anchor-link">License<a href="#license" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-chevronDown"></use></svg><h3>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-chevronDown"></use></svg><h3>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#lueuravatar"><span>@lueur/avatar</span></a><ul><li><a href="#table-of-contents"><span>Table of <wbr/>Contents</span></a></li><li><a href="#features"><span>Features</span></a></li><li><a href="#installation"><span>Installation</span></a></li><li><a href="#usage"><span>Usage</span></a></li><li><ul><li><a href="#basic-usage"><span>Basic <wbr/>Usage</span></a></li><li><a href="#customizing-avatars"><span>Customizing <wbr/>Avatars</span></a></li><li><a href="#using-avatars-in-html"><span>Using <wbr/>Avatars in <wbr/>HTML</span></a></li></ul></li><li><a href="#api-reference"><span>API <wbr/>Reference</span></a></li><li><ul><li><a href="#generateavatarsvgusername-string-options-avataroptions-string"><span>generate<wbr/>Avatar<wbr/>Svg(username: string, options?: <wbr/>Avatar<wbr/>Options): string</span></a></li><li><a href="#generateavatardatauriusername-string-options-avataroptions-string"><span>generate<wbr/>Avatar<wbr/>Data<wbr/>Uri(username: string, options?: <wbr/>Avatar<wbr/>Options): string</span></a></li><li><a href="#avataroptions-interface"><span>Avatar<wbr/>Options <wbr/>Interface</span></a></li><li><a href="#avatarshape-type"><span>Avatar<wbr/>Shape <wbr/>Type</span></a></li></ul></li><li><a href="#how-it-works"><span>How <wbr/>It <wbr/>Works</span></a></li><li><a href="#contributing"><span>Contributing</span></a></li><li><a href="#license"><span>License</span></a></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="modules.html">@lueur/avatar - v0.1.2</a><ul class="tsd-small-nested-navigation" id="tsd-nav-container"><li>Loading...</li></ul></nav></div></div></div><footer></footer><div class="overlay"></div><script>
+          try {
+            const generateLinkElement = document.querySelector(".tsd-generator a");
+            const link = document.createElement("a");
+            Object.assign(link, {
+              href: "https://github.com/dmnsgn/typedoc-material-theme",
+              target: "_blank",
+              rel: "noreferrer",
+              innerText: "typedoc-material-theme."
+            });
+            generateLinkElement.insertAdjacentElement("afterend", link);
+            generateLinkElement.insertAdjacentText("afterend", " with ");
+          } catch (error) {
+
+          }
+        </script></body></html>
